@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65rem;
+    height: 35rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.left-container {
+    margin-right: 2rem;
+    width: 40rem;
+}
+
+.left-container p {
+    line-height: 1.5rem;
+}
+
+.right-container {
+    margin-left: 2rem;
+    width: 40rem;
+}
+
+
+.try-notice {
+    background-color: hsl(248, 32%, 49%);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.entry-box {
+    height: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+input {
+    /* background: url(images/icon-error.svg) no-repeat right ; */
+    width: 100%;
+    height: 2.3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-style: none;
+    border: hsl(246, 25%, 77%) solid 0.1rem;
+    outline: none;
+}
+.input{
+    width: 90%;
+}
+
+.span-p {
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+#format {
+    font-weight: 600;
+}
+
+
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 0.5rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+span {
+    color: #b9b6d3;
+    font-size: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: hsl(0, 100%, 74%);
+    padding-left: 0.3rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1050px) {
+    .main-container {
+        width: 50rem;
+    }
+  }
+
+@media (max-width: 805px) {
+    .main-container {
+        width: 40rem;
+    }
+
+    .try-notice {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .main-container {
+        display: grid;
+        width: 10rem;
+    }
+    
+    .right-container,
+    .left-container {
+        width: 20rem;
+        margin: 0 5rem;
+        font-size: 12px;
+        
+    }
+
+    body {
+        height: 120vh;
+        background-image: url(/intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+        align-items: inherit;
+    }
+
+    h1 {
+        margin-bottom: 0.5rem;
+        font-size: 1.7rem;
+        text-align: center;
+
+    }
+
+    .left-container {
+        margin-top: 1rem;
+    }
+
+    .left-container p {
+        margin-bottom: 0.5rem;
+        text-align: center;
+
+    }
+  }
+
+
+

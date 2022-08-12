@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body onload='document.form1.text1.focus()'>
+
+  <div class="main-container">
+    <div class="left-container">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="right-container">
+      <div class="try-notice">
+        <p>  Try it free 7 days then $20/mo. thereafter</p>
+      </div>
+      <div id="form" class="entry-box" name="form1">
+        <span class="span-p firstN-message" id="firstN-message"> </span>
+        <input required id="first-name" type="text" class="f-name first-name" placeholder="First Name ">
+
+        <span class="span-p s-span" id="secondN-message"></span>
+        <input required id="second-name" type="text" class="f-name second-name" placeholder="Last Name">
+        
+        <span class="span-p s-span" id="email-message"></span><span class="span-p s-span" id="format"></span>
+        <input required id="email" name='text1' type="email" class="f-name" placeholder="Email Address">
+
+        <span class="span-p s-span" id="password-message"></span>
+        <input required id="password" type="password" class="f-name" placeholder="Password">
+
+
+        <div class="btn" id="btn"><a href="#" > CLAIM YOUR FREE TRIAL</a></div>
+        <span>By clicking the button, you are agreeing to our <a>Terms and Services</a> </span>
+      </div>
+    </div>
+  </div>
+  <!-- target="_blank" -->
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
