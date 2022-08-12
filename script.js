@@ -19,7 +19,6 @@ const passEl = document.getElementById("password")
 function validateEmail(emailEl){
     let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     if (emailEl.value.match(mailFormat)){
-        alert("Valied Email address")
         return true
     }
     else {
