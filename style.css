@@ -137,7 +137,7 @@ a {
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 600px) {
     .main-container {
         display: grid;
         width: 10rem;
